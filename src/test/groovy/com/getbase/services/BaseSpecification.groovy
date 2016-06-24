@@ -1,10 +1,11 @@
 // WARNING: This code is auto-generated from the BaseCRM API Discovery JSON Schema
 
-package com.getbase.services
+package com.getbase.services;
 
-import com.getbase.Client
 import com.getbase.Configuration
+import com.getbase.Client
 import spock.lang.Specification
+
 
 abstract class BaseSpecification  extends Specification {
     def getAccessToken() {
@@ -83,7 +84,7 @@ abstract class BaseSpecification  extends Specification {
                 'currency': "EUR",
                 'hot': true,
                 'name': 'Website Redesign' +  nextRand(),
-                'value': 1000.0,
+                'value': 1000,
                 'tags': ["important"],
                 'contact_id': createContact().id,
         ]
